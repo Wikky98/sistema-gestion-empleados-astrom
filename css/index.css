@@ -158,13 +158,19 @@ footer p {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     header h1 {
             font-size: 22px;
         }
     
     nav ul {
-            flex-direction: column;
-            gap: var(--spacing-small);
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: var(--spacing-small);
         }
     
     main {
