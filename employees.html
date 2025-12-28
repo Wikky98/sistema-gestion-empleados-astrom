@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Lista de empleados - Astrom</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lista de empleados</h1>
+        <nav>
+            <a href="index.html">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- barra de acciones -->
+        <section>
+            <form action="/buscar" method="get">
+                <label for="search">Buscar empleado:</label>
+                <input type="text" name="q" id="search" placeholder="nombre o email...">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <!-- tabla de empleados -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Departamento</th>
+                    <th>Puesto</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Simon Wallace</td>
+                    <td>Simon74@gmail.com</td>
+                    <td>IT</td>
+                    <td>Data analytics</td>
+                    <td>
+                        <a href="employee-detail.html?id=1">Ver</a> |
+                        <a href="edit-employee.html?id=1">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Reina Lopez</td>
+                    <td>repez95@gmail.com</td>
+                    <td>Marketing</td>
+                    <td>stadistics</td>
+                    <td>
+                        <a href="employee-detail.html?id=2">Ver</a> |
+                        <a href="edit-employee.html?id=2">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Alice Deepfull</td>
+                    <td>deepalice@gmail.com</td>
+                    <td>Ventas</td>
+                    <td>Telemarketer</td>
+                    <td>
+                        <a href="employee-detail.html?id=3">Ver</a> |
+                        <a href="edit-employee.html?id=3">Editar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <a href="add-employee.html" class="fab">+</a>
+</body>
+
+</html>

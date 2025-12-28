@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Agregar empleado - Astrom</title>
+</head>
+
+<body>
+    <header>
+        <h1>Agregar nuevo empleado</h1>
+        <nav>
+            <a href="index.html">Volver al inicio</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/empleados" method="post">
+
+            <!-- informacion personal -->
+            <fieldset>
+                <legend>Informacion personal</legend>
+
+                <label for="nombre_completo">Nombre Completo</label>
+                <input type="text" id="nombre_completo" name="nombre_completo" required>
+
+                <label for="email_corporativo">Email</label>
+                <input type="email" id="email_corporativo" name="email_corporativo" required>
+
+                <label for="fecha_ingreso">Fecha de ingreso</label>
+                <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
+            </fieldset>
+
+            <!-- informacion laboral -->
+            <fieldset>
+                <legend>Informacion laboral</legend>
+
+                <label for="departamento">Departamento</label>
+                <select name="departamento" id="departamento">
+                    <option value="">Seleccione:</option>
+                    <option value="it">IT</option>
+                    <option value="rrhh">RRHH</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="Marketing">Marketing</option>
+                </select>
+
+                <label for="puesto">Puesto</label>
+                <input type="text" id="puesto" name="puesto" required>
+
+                <label for="salario">Salario</label>
+                <input type="number" id="salario" name="salario" min="1000" required>
+            </fieldset>
+
+            <!-- tipo de contrato -->
+            <fieldset>
+                <legend>Tipo de contrato</legend>
+
+                <label for="tiempo_completo">Tiempo completo</label>
+                <input type="radio" id="tiempo_completo" name="tipo_contrato" value="completo" required>
+
+                <label for="medio_tiempo">Medio tiempo</label>
+                <input type="radio" id="medio_tiempo" name="tipo_contrato" value="medio">
+
+                <label for="freelance">Freelance</label>
+                <input type="radio" id="freelance" name="tipo_contrato" value="freelance">
+            </fieldset>
+
+            <!-- beneficios -->
+            <fieldset>
+                <legend>Beneficios (opcionales)</legend>
+
+                <label for="seguro_medico">Seguro medico</label>
+                <input type="checkbox" id="seguro_medico" name="beneficios" value="seguro">
+
+                <label for="bono_anual">Bono anual</label>
+                <input type="checkbox" id="bono_anual" name="beneficios" value="bono">
+
+                <label for="home_office">Home office</label>
+                <input type="checkbox" id="home_office" name="beneficios" value="home_office">
+            </fieldset>
+
+            <!-- biografia -->
+            <label for="biografia">Biografia corta</label>
+            <textarea name="biografia" id="biografia" rows="5" maxlength="500"
+                placeholder="Máximo 500 caracteres"></textarea>
+
+            <!-- botones -->
+            <button type="submit">Guardar Empleado</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </main>
+</body>
+
+</html>
