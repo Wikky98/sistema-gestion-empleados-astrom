@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 60" width="260" height="60" aria-label="Astrom logo">
+  <!-- Icono -->
+  <g transform="translate(0,6)">
+    <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="3" opacity="0.9"></circle>
+    <path d="M24 10 L36 38 H12 Z" fill="currentColor"></path>
+    <circle cx="36" cy="20" r="3" fill="var(--color-secondary)"></circle>
+  </g>
+
+  <!-- Texto -->
+  <text x="64" y="38" font-family="var(--font-main)" font-size="28" font-weight="600" fill="currentColor" letter-spacing="0.5">
+    Astrom
+  </text>
+</svg>

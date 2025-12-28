@@ -41,6 +41,11 @@ body {
 
 /* header */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-large);
+
     background-color: var(--color-primary);
     color: white;
     padding: var(--spacing-large);
