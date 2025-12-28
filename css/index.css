@@ -58,7 +58,54 @@ header h1 {
     font-weight: 600;
 }
 
+/* logo */
+.logo {
+    width: auto;
+    max-width: 370px;
+    /* CLAVE */
+    flex-shrink: 0;
+}
+
+/* círculo animado en loop con pausa */
+.logo-ring {
+    stroke-dasharray: 126;
+    stroke-dashoffset: 126;
+    animation: ringLoop 8.5s linear infinite;
+}
+
+/*
+0%   → vacío
+45%  → se dibuja
+70%  → queda completo (pausa)
+100% → vuelve a empezar
+*/
+@keyframes ringLoop {
+    0% {
+        stroke-dashoffset: 126;
+    }
+
+    30% {
+        stroke-dashoffset: 0;
+    }
+
+    60% {
+        stroke-dashoffset: 0;
+    }
+
+    90% {
+        stroke-dashoffset: -126;
+    }
+
+    100% {
+        stroke-dashoffset: -126;
+    }
+}
+
 /* navegacion */
+nav {
+    margin-left: auto;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -181,6 +228,12 @@ footer p {
     section div {
             grid-template-columns: 1fr;
         }
+}
+@media (prefers-reduced-motion: reduce) {
+    .logo-ring {
+        animation: none;
+        stroke-dashoffset: 0;
+    }
 }
 
  /* ============== */

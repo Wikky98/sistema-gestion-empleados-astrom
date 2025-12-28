@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" >
     <title>Sistema de Gestión de Empleados - Astrom</title>
 </head>
-
 <body>
     <header>
-        <img src="svg/astrom_logo.svg" alt="Astrom" height="70">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325 60" aria-label="Astrom logo">
+        
+            <!-- Ícono / A -->
+            <g transform="translate(0,6)">
+                <circle class="logo-ring" cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="3" />
+        
+                <!-- A geométrica -->
+                <path d="M24 10 L36 38 H12 Z" fill="currentColor" />
+        
+                <!-- punto orbital -->
+                <circle cx="36" cy="20" r="3" fill="currentColor" />
+            </g>
+        
+            <!-- Texto SIN la A -->
+            <text x="48" y="43" font-family="var(--font-main)" font-size="28" font-weight="600" fill="currentColor"
+                letter-spacing="0.5">
+                strom
+            </text>
+        </svg>
+
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -40,5 +58,4 @@
         <p>&copy; 2026 Astrom. Todos los derechos reservados</p>
     </footer>
 </body>
-
 </html>
