@@ -1,5 +1,9 @@
 # 🏢 Sistema de Gestión de Empleados - Astrom
 
+![GitHub last commit](https://img.shields.io/github/last-commit/Wikky98/sistema-gestion-empleados-astrom)
+![GitHub repo size](https://img.shields.io/github/repo-size/Wikky98/sistema-gestion-empleados-astrom)
+![GitHub stars](https://img.shields.io/github/stars/Wikky98/sistema-gestion-empleados-astrom?style=social)
+
 Sistema web para gestión de recursos humanos desarrollado como proyecto de aprendizaje Full Stack.
 
 ![Estado: En Desarrollo](https://img.shields.io/badge/estado-en%20desarrollo-yellow)
@@ -68,7 +72,14 @@ cd sistema-gestion-empleados-astrom
 
 ## 📸 Screenshots
 
-*(Aquí agregarás capturas de pantalla más adelante)*
+### Página Principal
+![Página Principal](screenshots/home.png)
+
+### Listado de Empleados
+![Listado](screenshots/employees.png)
+
+### Formulario de Registro
+![Formulario](screenshots/form.png)
 
 ## 📚 Aprendizaje
 
